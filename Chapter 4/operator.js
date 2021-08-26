@@ -80,17 +80,17 @@ console.log(stringFive !== numberFive);
 const ellie1 = { name: 'ellie' };
 const ellie2 = { name: 'ellie' };
 const ellie3 = ellie1;
-console.log(ellie1 == ellie2);
-console.log(ellie1 === ellie2);
-console.log(ellie1 === ellie3);
+console.log(ellie1 == ellie2); // false
+console.log(ellie1 === ellie2); //false
+console.log(ellie1 === ellie3); //true
 
 // equality - puzzler
-console.log(0 == false);
-console.log(0 === false);
-console.log('' == false);
-console.log('' === false);
-console.log(null == undefined);
-console.log(null === undefined);
+console.log(0 == false); //true
+console.log(0 === false); //false
+console.log('' == false); //true
+console.log('' === false); //false
+console.log(null == undefined); //true
+console.log(null === undefined); //false
 
 // 8. Conditional operators: if
 // if, else if, else
@@ -100,12 +100,12 @@ if (name === 'ellie') {
 } else if (name === 'coder') {
   console.log('You are amazing coder');
 } else {
-  console.log('unkwnon');
+  console.log('unkwnon'); //출력
 }
 
 // 9. Ternary operator: ?
 // condition ? value1 : value2;
-console.log(name === 'ellie' ? 'yes' : 'no');
+console.log(name === 'ellie' ? 'yes' : 'no'); //no출력
 
 // 10. Switch statement
 // use for multiple if checks
@@ -114,7 +114,7 @@ console.log(name === 'ellie' ? 'yes' : 'no');
 const browser = 'IE';
 switch (browser) {
   case 'IE':
-    console.log('go away!');
+    console.log('go away!'); //출력
     break;
   case 'Chrome':
   case 'Firefox':
@@ -130,20 +130,20 @@ switch (browser) {
 // body code is executed.
 let i = 3;
 while (i > 0) {
-  console.log(`while: ${i}`);
+  console.log(`while: ${i}`); // 3 2 1
   i--;
 }
 
 // do while loop, body code is executed first,
 // then check the condition.
 do {
-  console.log(`do while: ${i}`);
+  console.log(`do while: ${i}`); //0
   i--;
 } while (i > 0);
 
 // for loop, for(begin; condition; step)
 for (i = 3; i > 0; i--) {
-  console.log(`for: ${i}`);
+  console.log(`for: ${i}`); 
 }
 
 for (let i = 3; i > 0; i = i - 2) {
