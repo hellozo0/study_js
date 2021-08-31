@@ -15,6 +15,7 @@
       },
     },
   };
+
   const person2 = {
     name: 'Bob',
   };
@@ -28,7 +29,7 @@
     // printManager(person2);
   }
 
-  // 💩💩💩
+  // 💩💩💩 Ternary Operator 사용
   {
     function printManager(person) {
       console.log(
@@ -78,29 +79,29 @@
 
   {
     const name = null;
-    const userName = name || 'Guest';
+    const userName = name || 'Guest'; 
     console.log(userName);
   }
 
   // 💩
   {
     const name = '';
-    const userName = name || 'Guest';
-    console.log(userName);
+    const userName = name || 'Guest'; //''도 false로 간주되서 Guest가 할당..이름을 안쓰고 싶은데..
+    console.log(userName); //Guest
 
     const num = 0;
-    const message = num || 'undefined';
-    console.log(message);
+    const message = num || 'undefined'; //undefined로 할당
+    console.log(message); //undefined
   }
 
   // ✨
   {
     const name = '';
-    const userName = name ?? 'Guest';
-    console.log(userName);
+    const userName = name ?? 'Guest'; //이름이 있다면 name을 쓰고, 값이 없다면 Guest
+    console.log(userName);  //   출력
 
     const num = 0;
-    const message = num ?? 'undefined';
-    console.log(message);
+    const message = num ?? 'undefined'; //num이 있다면 num쓰고, 없으면 undefined
+    console.log(message); //0
   }
 }
