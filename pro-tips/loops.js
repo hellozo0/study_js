@@ -8,7 +8,7 @@ function getAllEvens(items) {
     if (items[i] % 2 === 0) {
       result.push(items[i]);
     }
-  }
+  } 
   return result;
 }
 
@@ -32,6 +32,7 @@ const evens = getAllEvens(items);
 const multiple = multiplyByFour(evens);
 const sum = sumArray(multiple);
 console.log(sum);
+
 
 // ✅ Good Code ✨
 const evens = items.filter((num) => num % 2 === 0);

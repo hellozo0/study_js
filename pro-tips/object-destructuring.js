@@ -20,7 +20,7 @@ function displayPerson(person) {
   displayAvatar(name);
   displayName(name);
   displayProfile(name, age);
-}
+} 
 
 // ✅ Good Code ✨
 function displayPerson(person) {

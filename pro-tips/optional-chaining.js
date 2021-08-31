@@ -11,13 +11,14 @@ const anna = {
   },
 };
 
+
 // ❌ Bad Code 💩
 function displayJobTitle(person) {
   if (person.job && person.job.title) {
     console.log(person.job.title);
   }
 }
-
+ 
 // ✅ Good Code ✨
 function displayJobTitle(person) {
   if (person.job?.title) {

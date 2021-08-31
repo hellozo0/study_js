@@ -10,7 +10,7 @@ function displayUser() {
         });
     });
 }
-
+ 
 // ✅ Good Code ✨
 async function displayUser() {
   const user = await fetchUser();

@@ -21,3 +21,4 @@ function greetings(person) {
   const { name, score } = person;
   console.log(`Hello ${name}, Your current score is: ${score}`);
 }
+ 

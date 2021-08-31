@@ -18,3 +18,4 @@ function getResult(score) {
 
 console.log(getResult(6));
 console.log(getResult(5));
+ 

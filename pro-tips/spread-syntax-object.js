@@ -15,7 +15,7 @@ newObject['gender'] = detail.gender;
 console.log(newObject);
 
 // ❌ Bad Code 💩
-const newObject2 = {
+const newObject2 = { 
   type: item.type,
   size: item.size,
   price: detail.price,

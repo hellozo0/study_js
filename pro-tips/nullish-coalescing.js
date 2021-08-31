@@ -11,7 +11,7 @@ function printMessage(text) {
 
 // ✅ Good Code ✨
 function printMessage(text) {
-  const message = text ?? 'Nothing to display 😜';
+  const message = text ?? 'Nothing to display 😜'; // 텍스트가 있다면 그대로 쓰고 없으면 출력문 저장
   console.log(message);
 }
 
