@@ -15,12 +15,12 @@
 
   // 💩
   const ellie2 = {
-    name: name,
-    age: age,
+    name: name, //Ellie
+    age: age, //18
   };
 
-  // ✨
-  const ellie3 = {
+  // ✨ 축약해서 코드 작성 가능
+  const ellie3 = {  
     name,
     age,
   };
@@ -28,6 +28,8 @@
   console.log(ellie1, ellie2, ellie3);
   console.clear();
 }
+
+
 
 /**
  * Destructuring Assignment
@@ -50,11 +52,12 @@
 
   // ✨
   {
-    const { name, level } = student;
-    console.log(name, level);
+    const { name, level } = student; 
+    console.log(name, level); //Anna 1
 
+    //키의 이름을 변경할 수도 있음
     const { name: studentName, level: studentLevel } = student;
-    console.log(studentName, studentLevel);
+    console.log(studentName, studentLevel); //Anna 1
   }
 
   // array
@@ -69,11 +72,13 @@
 
   // ✨
   {
-    const [first, second] = animals;
+    const [first, second] = animals; //0, 1번째에 접근 ( 강아지 고양이)
     console.log(first, second);
   }
   console.clear();
 }
+
+
 
 /**
  * Spread Syntax
@@ -86,12 +91,13 @@
   const array = [obj1, obj2];
 
   // array copy
-  const arrayCopy = [...array];
+  const arrayCopy = [...array]; //🌟object의 참조값을 복사 받음
   console.log(array, arrayCopy);
 
   const arrayCopy2 = [...array, { key: 'key3' }];
-  obj1.key = 'newKey';
+  obj1.key = 'newKey'; //🌟따라서 값을 바꾸면 전체가 다 바뀜(참조값을 복사 받아서)
   console.log(array, arrayCopy, arrayCopy2);
+
 
   // object copy
   const obj3 = { ...obj1 };
@@ -101,15 +107,17 @@
   const fruits1 = ['🍑', '🍓'];
   const fruits2 = ['🍌', '🥝'];
   const fruits = [...fruits1, ...fruits2];
-  console.log(fruits);
+  console.log(fruits); //복숭,딸기,바나나,키위
 
   // object merge
   const dog1 = { dog: '🐕' };
   const dog2 = { dog: '🐶' };
   const dog = { ...dog1, ...dog2 };
-  console.log(dog);
+  console.log(dog); //🚨만약 키가 값은 object를 병합하면 뒤에꺼가 앞에꺼를 덮어씀
   console.clear();
 }
+
+
 
 /**
  * Default parameters
@@ -126,13 +134,13 @@
     }
 
     printMessage('hello');
-    printMessage();
+    printMessage(); //undefined
   }
 
   // ✨
   {
-    function printMessage(message = 'default message') {
-      console.log(message);
+    function printMessage(message = 'default message') { //초기값을 지정
+      console.log(message); 
     }
 
     printMessage('hello');
@@ -140,6 +148,8 @@
   }
   console.clear();
 }
+
+
 
 /**
  * Ternary Operator
@@ -167,6 +177,8 @@
   console.clear();
 }
 
+
+
 /**
  * Template Literals
  * https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Template_literals
@@ -181,7 +193,6 @@
   );
 
   // ✨
-  
   console.log(`Today weather is ${weather} and temparature is ${temparature}.`);
 
 }
